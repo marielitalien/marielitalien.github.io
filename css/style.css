@@ -1,0 +1,162 @@
+/* General visual stuff */
+
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+body {
+  font-family: "Roboto", sans-serif;
+font-weight: 300;
+	margin: 0;
+	  background: url("purpleguy.gif") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	background-color: black;
+}
+
+img {
+  max-width: 500px;
+}
+/* Styling the "Normal" message*/
+.Normal {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+	font-weight: 200;
+    font-size: 17px;
+    color:white;
+	margin-top: 20%;
+	letter-spacing: 2px;
+}
+
+/* Styling the menu for Index.html */
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 16px;
+  color: white;
+	margin-bottom: 10%;
+	font-size: 14px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 200;
+	letter-spacing: 2px; }
+
+li:hover { 
+  color: grey;
+  font-size: 1em;
+}
+
+/* Styling the gif animation */
+
+img.ri
+{
+	position: absolute;
+	max-width: 50%;
+	top: 20%;
+	left: 10%;
+	margin-top: 5%;	 
+}
+
+img.ri:empty
+{
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+@media screen and (orientation: portrait) {
+  img.ri { max-width: 90%; }
+}
+
+@media screen and (orientation: landscape) {
+  img.ri { max-height: 90%; }
+}
+
+.currentpage {
+	color: grey;	
+}
+
+/*responsiveness*/
+
+@media only screen and (max-width : 768px ){
+	.welcome {
+		margin-bottom: 5%;
+		text-align: center;
+		font-size: 13px;
+		margin-left: 0;
+	}
+
+	img {
+	width: 80%;
+	position: center fixed;
+	margin-right: 10%;
+	margin left: 10%;
+	padding-top: none;
+		padding-left:10%;
+		padding-right: 10%;
+}
+	.textleft p {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	text-align: inherit;
+	margin-left: 10%;
+	margin-right: 10%;
+		padding: none;			
+}
+	ul {
+		padding-left: 0;
+		text-align: center;
+	}
+
+	li {
+  float: none;
+  display:inline-block;
+  text-align: center;
+margin-bottom: 0%;
+	margin-top: 10%;
+	font-size: 13px;
+	font-weight: 300;	
+}
+	.Normal {
+		margin-top: 0;
+	}	
+	div.textleft {
+	overflow: scroll;
+	background: transparent;
+	font-family: "Roboto", sans-serif;
+	margin-right: 0;
+	margin-left: 0;
+	line-height: 25px;
+	padding-top: 15px;
+	font-size: 12px;
+	height: 70%;
+	position: fixed;
+	margin-top: inherit		
+	}	
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
